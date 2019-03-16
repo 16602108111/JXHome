@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		F118077B223514F30044F748 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F118077A223514F30044F748 /* AppDelegate.m */; };
 		F118077E223514F30044F748 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F118077D223514F30044F748 /* ViewController.m */; };
-		F1180781223514F30044F748 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F118077F223514F30044F748 /* Main.storyboard */; };
 		F1180783223514F50044F748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1180782223514F50044F748 /* Assets.xcassets */; };
 		F1180786223514F50044F748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1180784223514F50044F748 /* LaunchScreen.storyboard */; };
 		F1180789223514F50044F748 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1180788223514F50044F748 /* main.m */; };
 		F1180793223514F50044F748 /* JXHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1180792223514F50044F748 /* JXHomeTests.m */; };
 		F118079E223514F50044F748 /* JXHomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F118079D223514F50044F748 /* JXHomeUITests.m */; };
+		F11807C72235525C0044F748 /* JXHTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11807C62235525C0044F748 /* JXHTabbarView.m */; };
+		F11807D62235594B0044F748 /* ErrorProtectCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F11807D52235594B0044F748 /* ErrorProtectCategory.m */; };
+		F11807D9223559D30044F748 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F11807D8223559D30044F748 /* NSObject+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		F118077A223514F30044F748 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F118077C223514F30044F748 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F118077D223514F30044F748 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F1180780223514F30044F748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1180782223514F50044F748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1180785223514F50044F748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1180787223514F50044F748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +52,13 @@
 		F1180799223514F50044F748 /* JXHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F118079D223514F50044F748 /* JXHomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHomeUITests.m; sourceTree = "<group>"; };
 		F118079F223514F50044F748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11807C52235525C0044F748 /* JXHTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHTabbarView.h; sourceTree = "<group>"; };
+		F11807C62235525C0044F748 /* JXHTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHTabbarView.m; sourceTree = "<group>"; };
+		F11807C8223552E50044F748 /* MacrosBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacrosBase.h; sourceTree = "<group>"; };
+		F11807D42235594B0044F748 /* ErrorProtectCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorProtectCategory.h; sourceTree = "<group>"; };
+		F11807D52235594B0044F748 /* ErrorProtectCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorProtectCategory.m; sourceTree = "<group>"; };
+		F11807D7223559D30044F748 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		F11807D8223559D30044F748 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,11 @@
 		F1180778223514F30044F748 /* JXHome */ = {
 			isa = PBXGroup;
 			children = (
+				F11807AB2235182A0044F748 /* Classes */,
 				F1180779223514F30044F748 /* AppDelegate.h */,
 				F118077A223514F30044F748 /* AppDelegate.m */,
 				F118077C223514F30044F748 /* ViewController.h */,
 				F118077D223514F30044F748 /* ViewController.m */,
-				F118077F223514F30044F748 /* Main.storyboard */,
 				F1180782223514F50044F748 /* Assets.xcassets */,
 				F1180784223514F50044F748 /* LaunchScreen.storyboard */,
 				F1180787223514F50044F748 /* Info.plist */,
@@ -130,6 +138,108 @@
 				F118079F223514F50044F748 /* Info.plist */,
 			);
 			path = JXHomeUITests;
+			sourceTree = "<group>";
+		};
+		F11807AB2235182A0044F748 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F11807BA2235525C0044F748 /* Cake */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F11807BA2235525C0044F748 /* Cake */ = {
+			isa = PBXGroup;
+			children = (
+				F11807BB2235525C0044F748 /* Expand */,
+				F11807C02235525C0044F748 /* Base */,
+			);
+			path = Cake;
+			sourceTree = "<group>";
+		};
+		F11807BB2235525C0044F748 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				F11807BC2235525C0044F748 /* Category */,
+				F11807BD2235525C0044F748 /* Const */,
+				F11807BE2235525C0044F748 /* Macros */,
+				F11807BF2235525C0044F748 /* Tool */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		F11807BC2235525C0044F748 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F11807D42235594B0044F748 /* ErrorProtectCategory.h */,
+				F11807D52235594B0044F748 /* ErrorProtectCategory.m */,
+				F11807D7223559D30044F748 /* NSObject+Category.h */,
+				F11807D8223559D30044F748 /* NSObject+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F11807BD2235525C0044F748 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		F11807BE2235525C0044F748 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				F11807C8223552E50044F748 /* MacrosBase.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		F11807BF2235525C0044F748 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F11807C02235525C0044F748 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F11807C12235525C0044F748 /* Root */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F11807C12235525C0044F748 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F11807C22235525C0044F748 /* Controller */,
+				F11807C32235525C0044F748 /* Model */,
+				F11807C42235525C0044F748 /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F11807C22235525C0044F748 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F11807C32235525C0044F748 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F11807C42235525C0044F748 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F11807C52235525C0044F748 /* JXHTabbarView.h */,
+				F11807C62235525C0044F748 /* JXHTabbarView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +347,6 @@
 			files = (
 				F1180786223514F50044F748 /* LaunchScreen.storyboard in Resources */,
 				F1180783223514F50044F748 /* Assets.xcassets in Resources */,
-				F1180781223514F30044F748 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +371,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11807D62235594B0044F748 /* ErrorProtectCategory.m in Sources */,
 				F118077E223514F30044F748 /* ViewController.m in Sources */,
 				F1180789223514F50044F748 /* main.m in Sources */,
 				F118077B223514F30044F748 /* AppDelegate.m in Sources */,
+				F11807C72235525C0044F748 /* JXHTabbarView.m in Sources */,
+				F11807D9223559D30044F748 /* NSObject+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +412,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F118077F223514F30044F748 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1180780223514F30044F748 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1180784223514F50044F748 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,13 +542,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PPE8KUV6;
 				INFOPLIST_FILE = JXHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = JX.JXHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,13 +560,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PPE8KUV6;
 				INFOPLIST_FILE = JXHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = JX.JXHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
